@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 260px;
+    background-image: linear-gradient(to bottom, rgb(53, 207, 94), rgb(32, 135, 64), rgb(26, 95, 52));
+    color: white;
+    width: 1500px;
+    box-shadow: 5px 5px 5px #0000003d; /*quanto anda pro lado, pra baixo, o quanto vai espalhar, cor e transparência */
+    
+}
+
+h1#principal {
+font-family: Alumni Sans Pinstripe;
+font-weight: bolder;
+text-align: center;
+font-style: normal;
+font-size: 45px;
+}
+
+.pcabecalho {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: -25px;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-decoration: none;
+    gap: 5px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+nav > a {
+    display: flex;
+    background-color:rgb(26, 95, 52);
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 15px;
+    height: 30px;   
+}
+
+nav > a:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+main {
+    background-color: white;
+    padding: 1px 20px;
+    box-shadow: 5px 5px 5px #0000002e; /*quanto anda pro lado, pra baixo, o quanto vai espalhar, cor e transparência */
+    width: 1100px; /*largura da onde está branco*/
+    margin: auto; /*centraliza independente do tamanho da tela*/
+}
+
+.titulo1 {
+    font-family: "Asimovian";
+    color: rgb(26, 95, 52);
+    font-size: 37px;
+}   
+
+.titulo2 {
+    font-family: "Asimovian";
+    background-image: linear-gradient(to left, rgb(252, 252, 252), rgba(104, 224, 136, 0.605));
+    color: rgb(26, 95, 52);
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.caixa2 {
+    background-color: rgba(104, 224, 136, 0.605);
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 0px;     /* cima */
+    padding-right: 20px;   /* direita */
+    padding-bottom: 10px;  /* baixo */
+    padding-left: 20px; 
+}
+
+.tcaixa2 {
+    background-color: rgb(26, 95, 52);
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    width: 1080px;
+    margin-left: -20px;
+}
+
+ul {
+  columns: 2;           /* define 2 colunas */
+  column-gap: 40px;     /* espaço entre as colunas */
+  list-style-position: inside; /* opcional: mantém os marcadores dentro */
+}
+
+footer {
+    background-color: rgb(26, 95, 52);
+    color: white;
+    text-align: center;
+    margin-top: 40px; /* espaço acima do footer */
+    font-size: 13px;
+    padding: 3px;
+}

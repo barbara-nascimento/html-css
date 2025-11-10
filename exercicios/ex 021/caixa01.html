@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            /* 
+            essa linha abaixo substitui todas essas na parte do "a" em border
+            */
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid rgb(15, 112, 160);
+
+            padding: 10px;
+
+            /*
+            Se vc colocar 10px apenas, todos os lados ficarão com 10px, pra ser personalizado precisa colocar as quatro medidas 
+            */
+
+            margin: 20px auto 40px auto;
+            /* essa margem é a "última caixa" */
+
+            outline: 5px dashed blue;
+
+        }
+
+        a { 
+    
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

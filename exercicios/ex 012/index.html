@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente</H1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midias/meuvideo.mp4" width="560" controls autoplay loop></video> <!-- essa é uma das formas de fazer, mas o indicado é colocar 1 formado de cada para não ter problema de abrir em outros navegadores-->
+
+    <video width="560" controls autoplay loop>
+        <source src="midias/Meuvideo2.webm" type="video/webm">
+        <source src="midias/Meuvideo2.mp4" type="video/mp4">
+        <source src="midias/meuvideo.ogv" type="video/ogv">
+        <source src="midias/meuvideo.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <!-- essa forma de colocar videos hospedados localmente ocupam muito espaço na rede e com isso o seu cliente vai pagar mais caro na hora de pagar pela manutenção do site-->
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=ZFlIa-zBHU6W1RXt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- vá no vídeo e clique em compartilhar, depois em incorporar-->
+
+    <h1>Inserindo videos pelo Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/7636697?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Animation Reel"></iframe>
+</body>
+</html>
