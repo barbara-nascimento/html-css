@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body {
             height: 100vh;
@@ -11,14 +11,19 @@
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /*contain: usa 100% da imagem sem corta-la; cover: vai cobrir a tela toda, mesmo que pra isso ele corte um pouco da imagem
-            
+            background-size: cover;  /*contain: usa 100% da imagem sem corta-la; cover: vai cobrir a tela toda, mesmo que pra isso ele corte um pouco da imagem
             100% 100% : dessa maneira você consegue colocar 100% da imagem em largura e altura*/
+            background-attachment: fixed; /*scroll: a medida que eu rolo a imagem, ela se repete. fixed: fixa a imagem independente da rolagem */ 
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+
+            background: black url('image/wallpaper002.jpg') center center no-repeat fixed;
+            background-size cover;*/
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
