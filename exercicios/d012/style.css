@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor0: black;
+    --cor1: white;
+
+    --fonte-padrao: 'Passion One', cursive;
+    --fonte-titulo: 'Sriracha', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: var('--fonte-titulo');
+}
+
+header {
+    background-color: var(--cor0);
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    padding-top: 40px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    
+}
+
+header > p {
+    color: var(--cor1);
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-titulo);
+    font-size: 3.5vw;
+    
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.204);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.452);
+    text-shadow: 1px 1px 0px;
+    font-weight: normal;
+}
+
+#img1 {
+    background-image: url('imagens/background001.jpg');
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+#img2 {
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+footer {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    padding: 5px;
+}
+
+footer > a:hover {
+    background-color: white;
+    color: black;
+}
