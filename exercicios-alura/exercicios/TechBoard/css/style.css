@@ -97,11 +97,13 @@ section img {
 
     h1 {
         font-size: 40px;
+        width: 341px;
     }
 
     p {
         font-size: 20px;
-        width: 340px;
+        width: 341
+        ++px;
     }
 
     section img {
